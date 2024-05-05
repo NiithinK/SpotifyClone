@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Button, Tooltip, colors } from '@mui/material';
 import { Tab, Tabs } from '@mui/material';
-import axios from 'axios';
 import { useEffect } from 'react';
 import './Section.css'
 // Import Swiper styles
