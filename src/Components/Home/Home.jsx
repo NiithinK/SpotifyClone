@@ -16,10 +16,10 @@ function Home() {
 
     const fetchTopAlbums = async () => {
         try {
-            const res = await axios.get(`https://qtify-backend-labs.crio.do/albums/top`);
-            if (res.data?.length) {
-                setTopAlbums(() => [...res.data]);
-            }
+            const res = await fetch(`https://qtify-backend-labs.crio.do/albums/top`);
+                const data = await res.json();
+                setTopAlbums(data);
+          
         } catch (error) {
             console.log(error);
         }
@@ -27,10 +27,10 @@ function Home() {
 
     const fetchNewAlbums = async () => {
         try {
-            const res = await axios.get(`https://qtify-backend-labs.crio.do/albums/new`);
-            if (res.data?.length) {
-                setNewAlbums(() => [...res.data]);
-            }
+            const res = await fetch(`https://qtify-backend-labs.crio.do/albums/new`);
+            const data = await res.json();
+                setNewAlbums(data);
+            
         } catch (error) {
             console.log(error);
         }
@@ -38,11 +38,12 @@ function Home() {
 
     const fetchSongs = async () => {
         try {
-            const res = await axios.get(`https://qtify-backend-labs.crio.do/songs`);
-            if (res.data?.length) {
-                setSongs(() => [...res.data]);
-                setFilteredSongs(() => [...res.data]);
-            }
+            const res = await fetch(`https://qtify-backend-labs.crio.do/songs`);
+            const data = await res.json();
+           
+                setSongs(data);
+                setFilteredSongs(data);
+           
         } catch (error) {
             console.log(error);
         }
@@ -61,10 +62,11 @@ function Home() {
 
    const fetchTabs = async () => {
         try {
-            const res = await axios.get(`https://qtify-backend-labs.crio.do/genres`);
-            if (res.data?.data?.length) {
-                setTabs(() => [...res.data.data]);
-            }
+            const res = await fetch(`https://qtify-backend-labs.crio.do/genres`);
+            const data = await res.json();
+          
+                setTabs(data.data);
+           
         } catch (error) {
             console.log(error);
         }
