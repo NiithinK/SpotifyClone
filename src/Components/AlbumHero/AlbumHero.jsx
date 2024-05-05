@@ -12,7 +12,7 @@ import { Hidden } from '@mui/material';
 import Box from "@mui/material/Box";
 import SearchBox from "../SearchBox/SearchBox";
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 import { useLocation } from 'react-router-dom';
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 
