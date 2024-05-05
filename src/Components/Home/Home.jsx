@@ -5,7 +5,7 @@ import { Tab, Tabs } from '@mui/material';
 import Box from '@mui/material/Box';
 import SearchBox from '../SearchBox/SearchBox';
 import { Hero } from '../Hero/Hero';
-import axios from 'axios';
+
 function Home() {
     const [tabs, setTabs] = useState([]);
     const [topAlbums, setTopAlbums] = useState([]);
