@@ -1,0 +1,26 @@
+.navbar{
+    height: 74px;
+    background-color: #34C94B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px 0px 32px;
+}
+.logo-img{
+    width: 67px;
+    height: 34px;
+    margin-top: 20px;
+    margin-right: 25px;
+    
+    
+}
+
+
+@media screen and (max-width: 458px) {
+    .logo-img {
+      width: 40px; /* Adjusted width for mobile screens */
+      height: 24px;
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+  }

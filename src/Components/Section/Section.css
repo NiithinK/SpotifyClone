@@ -1,0 +1,18 @@
+.title-button{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+color: aliceblue;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 10px;
+}
+.buttonColl{
+    font-weight: 600;
+    font-size: medium;
+}
+
+.swiper{
+    margin-left: 5rem;
+    margin-right: 5rem ;
+}
