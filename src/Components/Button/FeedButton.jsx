@@ -143,7 +143,7 @@ export default function FeedButton() {
                 <Button 
                     variant="contained" 
                     onClick={handleClickOpen} 
-                    sx={{ color:'#34C94B', backgroundColor:'black', ml:'10px', mr: '20px', borderRadius: '8px', width:'10rem',height:'3rem' }}
+                    sx={{ color:'#34C94B', backgroundColor:'black', mr:'10px', mr: '20px', borderRadius: '8px', width:'10rem',height:'3rem' }}
                 >
                     Give Feedback
                 </Button>

@@ -138,6 +138,7 @@ function Searchbar({ data }) {
         <>
             <Box sx={{
                 display: 'flex',
+                ml: '20px',
                 mt:'10px',
                 minWidth: isSmallScreen ? '568px' : '200px',
                 maxWidth: isSmallScreen ? '200px' : '568px',
@@ -145,7 +146,7 @@ function Searchbar({ data }) {
                 marginBottom: '20px', // Added margin for spacing between search bar and results
             }}>
                 <InputBase
-                    placeholder="Search a song of your choice"
+                    placeholder= "Search a song of your choice"
                     onChange={handleChange}
                     value={value}
                     sx={{
