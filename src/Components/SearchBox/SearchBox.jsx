@@ -71,7 +71,7 @@ function Searchbar({ data }) {
              background:'black',
              color:'white',
              border:'1px solid  #34C94B',
-             marginLeft:isSmallScreen ? '25rem':'4rem' ,
+             marginLeft:isSmallScreen ? '30rem':'4rem' ,
              borderRadius:'10px'
           }}>
             {!searchResults.length ? (
