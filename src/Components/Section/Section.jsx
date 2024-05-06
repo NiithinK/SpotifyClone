@@ -37,7 +37,7 @@ export default function Section({title = 'Title', items = [], type = 'album', ta
       className='swiper'
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
-      slidesPerView={7}
+      slidesPerView={9}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}

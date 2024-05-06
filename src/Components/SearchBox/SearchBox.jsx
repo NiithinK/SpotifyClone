@@ -3,10 +3,11 @@ import Box from '@mui/material/Box';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
-import { Typography, useMediaQuery } from '@mui/material';
+import { Typography, useMediaQuery, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styles from "./Search.modules.css";
 import Paper from '@mui/material/Paper';
+
 function Searchbar({ data }) {
     const theme = useTheme();
     const [value, setValue] = useState("");
@@ -23,7 +24,7 @@ function Searchbar({ data }) {
 
     return (
         <>
-            <Box sx={{
+             <Box sx={{
                 display: 'flex',
                 minWidth: isSmallScreen ? '568px' : '200px',
                 maxWidth: isSmallScreen ? '200px' : '568px',
@@ -62,19 +63,21 @@ function Searchbar({ data }) {
                     <SearchIcon />
                 </IconButton>
             </Box>
+            {/* Render search results */}
             {value.length > 0 && 
-            <Paper sx={{
-              position: 'absolute',
-             top: 'calc(9% + 5px)',
-             width: isSmallScreen ? '600px' : '300px',
-             zIndex: '999',
-             background:'black',
-             color:'white',
-             border:'1px solid  #34C94B',
-             marginLeft:isSmallScreen ? '30rem':'4rem' ,
-             borderRadius:'10px'
-          }}>
-            {!searchResults.length ? (
+                <Paper sx={{
+                    position: 'absolute',
+                    top: 'calc(9% + 10px)',
+                    width: isSmallScreen ? '600px' : '300px',
+                    zIndex: '999',
+                    background: 'black',
+                    color: 'white',
+                    border: '1px solid  #34C94B',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    borderRadius: '10px',
+                }}>
+                    {!searchResults.length ? (
               <Typography sx={{
                 color:'red',
                 fontSize:isSmallScreen ? '60px' : '30px',
@@ -91,22 +94,18 @@ function Searchbar({ data }) {
                     alignItems: 'center',
                     marginBottom: '5px', // Added margin for spacing between search results
                     padding: '5px',
-                  
+
                     borderRadius: '8px',
                 }}>
-                    <img src={album.image} alt={album.title} style={{ width: '20px', height: '20px', marginRight: '10px' }} />
-                    <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>{album.title}</p>
+                    <img src={album.image} alt={album.title} style={{ width: '50px', height: '50px', marginRight: '10px' }} />
+                    <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold' }}>{album.title}</p>
                     {/* Add your follow button here */}
-                    <p style={{ marginLeft: 'auto', color: 'white', border: 'none', borderRadius: '5px', padding: '5px ',  }}>{album.follows}  Follow</p>
+                    <p style={{ marginLeft: 'auto', color: 'white', border: 'none', borderRadius: '5px', padding: '5px ', fontSize: '18px', }}>{album.follows}  Follow</p>
                 </Box>
             ))
             )}
-          </Paper>
+                </Paper>
             }
-
-    
-            
-            
         </>
     );
 }
