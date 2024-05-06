@@ -19,7 +19,7 @@ function msToMinSec(ms) {
     return formattedTime;
 }
 export default function AlbumTable({data}) {
-    console.log(data)
+
   return (
     <TableContainer component={Paper} sx={{ marginTop: "40px", marginBottom: '80px', backgroundColor: 'black' }}>
       <Table sx={{ minWidth: 400 }} aria-label="simple table">
