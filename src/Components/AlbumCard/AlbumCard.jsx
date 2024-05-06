@@ -30,8 +30,8 @@ const AlbumCard = ({album ,title,type}) => {
                                 justifyContent: 'space-between',
                                 overflow: 'hidden',
                                 cursor: 'pointer',
-                                marginLeft:'20px',
-                                marginRight:'20px'
+                                marginLeft:'10px',
+                                marginRight:'10px'
                                 
                 }} onClick={() =>
                   title != "Songs" &&

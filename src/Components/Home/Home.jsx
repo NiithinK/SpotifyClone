@@ -5,7 +5,7 @@ import { Tab, Tabs } from '@mui/material';
 import Box from '@mui/material/Box';
 import SearchBox from '../SearchBox/SearchBox';
 import { Hero } from '../Hero/Hero';
-
+import FAQS from '../FAQs/Faqs'
 function Home() {
     const [tabs, setTabs] = useState([]);
     const [topAlbums, setTopAlbums] = useState([]);
@@ -111,6 +111,7 @@ function Home() {
                 <Section title='New Albums' items={newAlbums} />
                 <Section title='Songs' type={type} items={filteredSongs} tabs={songTabs} />
             </section>
+            <FAQS/>
            
         </main>
     );

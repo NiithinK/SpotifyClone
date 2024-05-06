@@ -137,7 +137,11 @@ function Searchbar({ data }) {
     return (
         <>
             <Box sx={{
-                position: 'relative',
+                display: 'flex',
+                mt:'10px',
+                minWidth: isSmallScreen ? '568px' : '200px',
+                maxWidth: isSmallScreen ? '200px' : '568px',
+                minHeight: isSmallScreen ? '52px' : 'px',
                 marginBottom: '20px', // Added margin for spacing between search bar and results
             }}>
                 <InputBase
@@ -150,26 +154,28 @@ function Searchbar({ data }) {
                         bgcolor: 'white',
                         py: '4px',
                         pl: '15px',
-                        pr: '48px',
                         border: '1px solid black',
-                        borderRadius: '8px',
+                        borderRadius: isSmallScreen ? '8px' : '8px',
+                        borderTopRightRadius: 0,
+                        borderBottomRightRadius: 0,
+                        marginTop:'13px'
                     }}
                 />
                 <IconButton type="button" aria-label="search" sx={{
-                    position: 'absolute',
-                    right: '0',
-                    top: '0',
                     background: 'white',
                     height: '48px',
                     px: '10px',
                     bgcolor: 'white',
                     border: '1px solid black',
-                    borderRadius: '0 8px 8px 0',
+                    borderRadius: isSmallScreen ? '8px' : '8px',
+                    borderTopLeftRadius: 0,
+                    borderBottomLeftRadius: 0,
+                    borderLeft: 0,
+                    marginTop:'13px'
                 }}>
                     <SearchIcon />
                 </IconButton>
             </Box>
-
             {/* Render search results */}
             {value.length > 0 &&
                 <Paper sx={{
