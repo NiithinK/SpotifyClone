@@ -100,9 +100,10 @@ function Home() {
         }
     }, []);
     const type ="song";
+   
     return (
         <main>
-          <Navbar/>
+          <Navbar data={topAlbums.concat(newAlbums)} page="home"/>
           <Hero/>
            
             <section>

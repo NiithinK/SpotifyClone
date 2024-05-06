@@ -10,8 +10,10 @@
 }
 @media screen and (max-width: 450px) {
     .feedback [type="text"] {
-      width: 20px; /* Adjusted width for mobile screens */
+      /* Adjusted width for mobile screens */
       margin-left: 100px;
+      width: 90vw;
+      top: 13%;
      
     }
   }

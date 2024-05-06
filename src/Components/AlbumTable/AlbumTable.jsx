@@ -52,7 +52,7 @@ export default function AlbumTable({data}) {
                                 </div>
                 </TableCell>
                 <TableCell sx={{ color: 'white' }}>{song.artists.join(", ")}</TableCell>
-                            <TableCell sx={{ color: 'white' }}>{msToMinSec(song.durationInMs)}</TableCell>
+             <TableCell sx={{ color: 'white' }}>{msToMinSec(song.durationInMs)}</TableCell>
              
             </TableRow>
           ))}

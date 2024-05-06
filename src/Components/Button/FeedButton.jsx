@@ -30,9 +30,6 @@ export default function FeedButton() {
             <button
                className='feedback'
                onClick={handleClickOpen}
-               sx={{
-                
-               }}
             >
                 Give Feedback
             </button>

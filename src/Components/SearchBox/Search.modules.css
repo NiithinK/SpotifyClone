@@ -1,0 +1,10 @@
+.searchResultWrapper {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 0;
+  margin-top: 74px;
+  
+}
