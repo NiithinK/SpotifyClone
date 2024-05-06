@@ -4,6 +4,7 @@ import Album from './Components/Album/Album';
 import './App.css';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import Playingtab from './Components/PlayingTab/PlayingTab';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           
         </Routes>
       </Router>
-      
+      <Playingtab/>
     </div>
   );
 }
