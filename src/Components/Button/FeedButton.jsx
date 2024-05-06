@@ -137,7 +137,7 @@ export default function FeedButton() {
             {isSmallScreen ? (
                 <RateReviewOutlinedIcon 
                     onClick={handleClickOpen} 
-                    sx={{ color:'#34C94B', ml: '20px',backgroundColor:'black',padding:'3px',width:'2rem' }} 
+                    sx={{ color:'#34C94B', ml: '20px',backgroundColor:'black',padding:'3px',width:'2.5rem',height:'1.8rem',borderRadius:'5px', }} 
                 />
             ) : (
                 <Button 
